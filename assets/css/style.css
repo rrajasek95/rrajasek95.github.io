@@ -78,7 +78,9 @@ h1 {
   font-size: 60px; }
 
 h2 {
-  font-size: 36px; }
+  font-size: 36px; 
+  margin-bottom: 10px;
+  }
 
 h3 {
   font-size: 28px; }
@@ -102,7 +104,8 @@ p {
   font-weight: 400;
   line-height: 28px;
   color: #8a8fa3;
-  margin: 0px; }
+  margin: 0px; 
+  margin-bottom: 10px;}
   @media (max-width: 767px) {
     p {
       font-size: 15px; } }
