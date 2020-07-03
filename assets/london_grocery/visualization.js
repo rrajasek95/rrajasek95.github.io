@@ -18,7 +18,8 @@ let svg = d3.select("svg")
 
 let months = [
     'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+    'year' // Special field for yearly data
 ];
 
 let monthCsvs = [];
@@ -35,25 +36,41 @@ Promise.all([csvPromises, jsonPromise]).then(function(data) {
     let monthWiseData = data[0];
 
     // To simplify, let's look at December's distribution
-    console.log(monthWiseData);
 
 
-    let decemberData = monthWiseData[11];
+    let yearlyData = monthWiseData[12];
 
     let areaWiseData = {};
     let fieldWiseData = {};
 
     let fields = ['alcohol']
-    for (let i = 0 ; i < decemberData.length ; i++) {
-        areaWiseData[decemberData[i].area_id] = decemberData[i];
+    for (let i = 0 ; i < yearlyData.length ; i++) {
+        areaWiseData[yearlyData[i].area_id] = yearlyData[i];
 
         for (let j = 0 ; j < fields.length ; j++) {
             if (fieldWiseData[fields[j]] === undefined) {
                 fieldWiseData[fields[j]] = [];
             }
 
-            fieldWiseData[fields[j]].push(decemberData[i][fields[j]]);
+            fieldWiseData[fields[j]].push(yearlyData[i][fields[j]]);
         }
+    }
+
+    let monthWiseFieldData = {};
+    
+    for (const [area, data] of Object.entries(areaWiseData)) {
+        let dataIndexed = new Array(12);
+
+        for (let i = 0 ; i < 12 ; i++) {
+            for (let j = 0 ; j < monthWiseData[i].length ; j++) {
+                if (monthWiseData[i][j].area_id == area) {
+                    dataIndexed[i] = monthWiseData[i];
+                }
+            }
+            
+        }
+
+        monthWiseFieldData[area] = dataIndexed;
     }
 
     let fieldWiseQuantile = {};
@@ -72,7 +89,6 @@ Promise.all([csvPromises, jsonPromise]).then(function(data) {
     g.selectAll("rect")
      .data(quantile.range().map(function (d) {
         d = quantile.invertExtent(d);
-        console.log(d);
         if (d[0] == null) d[0] = xRange.domain()[0];
         if (d[1] == null) d[1] = xRange.domain()[1];
         return d;
