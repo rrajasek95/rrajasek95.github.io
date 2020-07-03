@@ -39,6 +39,16 @@ title: Home
                         <li>
                             <div class="single-info d-flex align-items-center">
                                 <div class="info-icon">
+                                    <i class="lni-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <p><span>Personal Email:</span> rrajasek [AT] ucsc [DOT] edu</p>
+                                </div>
+                            </div> <!-- single info -->
+                        </li>
+                        <li>
+                            <div class="single-info d-flex align-items-center">
+                                <div class="info-icon">
                                     <i class="lni-map-marker"></i>
                                 </div>
                                 <div class="info-text">
