@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Analysis of London Grocery Consumption Habits</title>
+    </head>
+    <body>
+        <style>
+            .meta-field {
+                font-weight: bold;
+            }
+
+            div.tooltip {	
+                position: absolute;			
+                text-align: center;			
+                width: 100px;					
+                height: 28px;					
+                padding: 2px;				
+                font: 12px sans-serif;		
+                background: lightcoral;	
+                border: 0px;		
+                border-radius: 8px;			
+                pointer-events: none;			
+            }
+
+        </style>
+        <h1>London Grocery Consumption Patterns</h1>
+        <svg id="canvas"></svg>
+        <div>
+            <h2>Information</h2>
+            <p>
+                <span class="meta-field">Created By: </span><span>Rishi Rajasekaran</span>
+            </p>
+            <p>
+                <span class="meta-field">Affiliation: </span><span>University of California, Santa Cruz</span>
+            </p>
+            <h3>References</h3>
+            <p>
+                <span class="meta-field">Article: </span><span><a href="https://www.nature.com/articles/s41597-020-0397-7">Aiello, L.M., Quercia, D., Schifanella, R. et al. Tesco Grocery 1.0, a large-scale dataset of grocery purchases in London. Sci Data 7, 57 (2020). https://doi.org/10.1038/s41597-020-0397-7                </a></span>
+            </p>
+            <p>
+                <span class="meta-field">Dataset: </span><a href="https://figshare.com/articles/Area-level_grocery_purchases/7796666">Area-level grocery purchases</a>
+            </p>
+            <p>
+                <span class="meta-field">GIS Data Source: </span><span><a href="https://data.london.gov.uk/dataset/statistical-gis-boundary-files-london">Statistical GIS Boundary Files for London</a></span>
+            </p>
+            <p>
+                <span class="meta-field">Source Acknowledgements:</span>
+                <ul>
+                    <li><span>Data Is Plural <a href="https://tinyletter.com/data-is-plural/letters/data-is-plural-2020-03-04-edition">2020.03.04 edition</a></span></li>
+                    <li><span><a href="https://www.thedataincubator.com/">The Data Incubator</a> </span></li>
+                </ul>
+            </p>
+        </div>
+
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://unpkg.com/topojson@3"></script>
+        <script src="visualization.js"></script>
+    </body>
+</html>
