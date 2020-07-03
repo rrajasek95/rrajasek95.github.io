@@ -15,16 +15,19 @@ title: Home
             </div>
         </div> <!-- row -->
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <img src="/assets/img/me_circle.jpg" />
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <div class="about-content mt-50">
                     <h5 class="about-title">About Me</h5>
-                    <p>Hi, I'm Rishi! I am a 1st year MS in CSE student at UC Santa Cruz. My research interest lies broadly in Natural Language Understanding and Semantic Analysis and hope to work on projects in those areas.</p>
-                    <p>I'm a native of Chennai, one of the many temple cities in India, where I spent the whole of my childhood.</p>
-                    <p>I did my bachelor's degree in Computer Science and Engineering from NIT Trichy in Tamil Nadu. I spent a huge chunk of time over there participating in quizzes, web development and getting cooked in the heat! I was a member of Spider R&D, a technology club, and Balls by Picasso, the literary club.</p>
-                    <p>I joined Morgan Stanley in 2017 where I worked as a Java developer in the Wealth Management Division. My work involved building backend systems for account creation and client onboarding.</p>
+                    <p>Hi, I'm Rishi! I am a 1st year MS in CSE student at UC Santa Cruz. My current areas of interest are in Natural Language Processing, with a focus on dialogue systems and machine learning under the supervision of <a href="https://users.soe.ucsc.edu/~maw/">Prof. Marilyn Walker</a>.</p>
+                    <p>
+                        Some key problems I am currently studying are how generative language models can be controlled to produce specific kinds of outputs, improving models for creating language understanding features such as for dialog act tagging and also how to better evaluate dialog. I was a member of the official UC Santa Cruz team that is a <a href="https://news.ucsc.edu/2020/05/alexa-challenge.html">finalist</a> in the <a href="https://developer.amazon.com/alexaprize">3rd Amazon Alexa Prize Challenge</a>. Some of the key tasks I worked on as part of the team were improving the natural language understanding components, writing response generators and also assessing pretrained models for ranking responses.
+                    </p>
+                    <p>I'm a native of Chennai, one of the many temple cities in India, where I spent the whole of my childhood. </p>
+                    <p>I did my bachelor's degree in Computer Science and Engineering from NIT Trichy in Tamil Nadu. I spent a huge chunk of time over there participating in quizzes, web development and getting cooked in the heat! I was a member of <a href="https://spider.nitt.edu/">Spider R&D</a>, a technology club, and <a href="https://www.facebook.com/ballsbypicasso/">Balls by Picasso</a>, the English Literary Club. As a member of Spider R&D, I worked on several campus administration projects including the groundwork for the current iteration of the <a href="https://mess.nitt.edu/">college dining hall site</a>, which we in NIT Trichy refer to as the mess site.</p>
+                    <p>I joined Morgan Stanley in 2017 where I worked as a Java developer for the Wealth Management Division. My work involved building backend systems for account creation and client onboarding. For more description of my work, refer to my <a href="https://drive.google.com/file/d/1SNHW-TjxWogLxxjldp89zO_kb0EzK8v1/view?usp=sharing">resume</a>. </p>
                     <ul class="clearfix">
                         <li>
                             <div class="single-info d-flex align-items-center">
@@ -42,7 +45,7 @@ title: Home
                                     <i class="lni-envelope"></i>
                                 </div>
                                 <div class="info-text">
-                                    <p><span>Personal Email:</span> rrajasek [AT] ucsc [DOT] edu</p>
+                                    <p><span>Personal Email:</span> rajasekaran [DOT] rishi [AT] gmail [DOT] com</p>
                                 </div>
                             </div> <!-- single info -->
                         </li>
@@ -82,7 +85,8 @@ title: Home
                                         <i class="lni-certificate"></i>
                                     </div>
                                     <div class="info-text">
-                                        <p><span>Resume:</span> <a href="/assets/pdfs/Resume_Rishi_Rajasekaran_UCSC.pdf">View</a></p>
+                                        <p><span>Resume:</span> 
+                                        <a name="resume" href="https://drive.google.com/file/d/1SNHW-TjxWogLxxjldp89zO_kb0EzK8v1/view?usp=sharing">View</a></p>
                                     </div>
                             </div>
                         </li>
