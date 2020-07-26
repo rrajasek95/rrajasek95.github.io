@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-post-template-js","path":"/posts/test","result":{"data":{"markdownRemark":{"html":"<p>Migrating my site to Gatsby</p>","frontmatter":{"date":"July 25, 2020","slug":"/posts/test","title":"The Great Gatsby (Migration)","categories":"web-development"}}},"pageContext":{"slug":"/posts/test"}}}
