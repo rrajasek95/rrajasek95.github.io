@@ -12,6 +12,8 @@ import './css/syntax.css'
 import 'popper.js';
 import 'jquery';
 
+import { Link } from "gatsby";
+
 const Header = () => {
     return (
         <header id="home" className="header-area">
@@ -23,10 +25,10 @@ const Header = () => {
                                 <div className="collapse navbar-collapse">
                                     <ul className="navbar-nav ml-auto">
                                         <li className="nav-item">
-                                            <a href="/">About</a>
+                                            <Link to="/">About</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a href="/blog">Posts</a>
+                                            <Link to="/blog">Posts</Link>
                                         </li>
                                     </ul>
                                 </div>

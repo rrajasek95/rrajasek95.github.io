@@ -5,6 +5,17 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: `Rishi Rajasekaran`
+  },
+  plugins: [
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'posts',
+        path: `${__dirname}/src/posts`
+      }
+    },
+    'gatsby-transformer-remark',
+  ],
 }
