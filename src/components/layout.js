@@ -11,7 +11,6 @@ import './css/syntax.css'
 
 import 'popper.js';
 import 'jquery';
-import 'bootstrap';
 
 const Header = () => {
     return (
