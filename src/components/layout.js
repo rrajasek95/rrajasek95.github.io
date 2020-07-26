@@ -47,7 +47,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="copyright-text text-center pt-20">
-                            <p>Adapted from the <a href="https://uideck.com/templates/unfold-free-personal-portfolio-and-profile-template/" rel=   "nofollow">Unfold</a> template created by <a href="https://uideck.com" rel="nofollow">UIdeck</a> (free for personal use)</p>
+                            <p>Adapted from the <a href="https://uideck.com/templates/unfold-free-personal-portfolio-and-profile-template/" rel=   "nofollow">Unfold</a> template created by <a href="https://uideck.com" rel="nofollow">UIdeck</a> (free for personal use). Site configured using <a href="https://www.gatsbyjs.org/">Gatsby</a></p>
                         </div>
                     </div>
                 </div>
