@@ -6,7 +6,13 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Rishi Rajasekaran`
+    title: `Rishi Rajasekaran`,
+    titleTemplate: "%s",
+    description:
+      "The homepage of Rishi Rajasekaran, UC Santa Cruz Graduate Student",
+    url: "https://rrajasek.com",
+    image: "/assets/img/me_circle.jpg",
+    twitterUsername: "@rishrajasek",
   },
   plugins: [
     {
@@ -16,6 +22,7 @@ module.exports = {
         path: `${__dirname}/src/posts`
       }
     },
+    'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
   ],
 }

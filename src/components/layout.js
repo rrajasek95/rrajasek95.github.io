@@ -13,6 +13,7 @@ import 'popper.js';
 import 'jquery';
 
 import { Link } from "gatsby";
+import SEO from './seo';
 
 const Header = () => {
     return (
@@ -62,6 +63,7 @@ const Footer = () => {
 export default function Layout({ children }) {
     return (
             <div>
+                <SEO />
                 <Header />
                 { children }
                 <Footer />
