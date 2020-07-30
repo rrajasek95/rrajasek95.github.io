@@ -14,3 +14,12 @@ pre {
     display: block;
     word-wrap: break-word;
 }
+
+
+p {
+    color: black;
+}
+
+li {
+    color: black;
+}

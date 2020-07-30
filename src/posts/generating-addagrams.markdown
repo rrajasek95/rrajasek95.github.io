@@ -232,7 +232,7 @@ We can do this optimization by building a *Trie* where each node corresponds to 
 
 We can visualize this in the diagram below
 
-![Diamond Graph]({{site.baseurl}}/assets/img/addagram_graph.png)
+![Diamond Graph](./images/addagram_graph.png)
 
 So, our job then is a matter of constructing a directed acylic graph from the words that we have. To start off, let us define our graph data structure.
 

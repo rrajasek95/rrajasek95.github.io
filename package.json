@@ -18,6 +18,8 @@
     "bootstrap": "^4.5.0",
     "gatsby": "^2.23.12",
     "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-sharp": "^2.6.23",
+    "gatsby-remark-images": "^3.3.22",
     "gatsby-remark-katex": "^3.3.10",
     "gatsby-source-filesystem": "^2.3.23",
     "gatsby-transformer-remark": "^2.8.27",
