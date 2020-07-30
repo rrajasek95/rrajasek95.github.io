@@ -50,7 +50,7 @@ We can come up with a brute force approach quite simply as follows:
 4. If the candidate word is valid, go to step 2 and repeat the process until you get a long enough sequence
 
 If we look carefully at what's happenening, letters must be added at various positions along the word. When we're building a 7 word sequence, we need to:
-- Single Letter: Add letters at 2 positions (before and after the letter) and then check the dictionary = $$ 26 \times 2 \times cost_{lookup} $$
+- Single Letter: Add letters at 2 positions (before and after the letter) and then check the dictionary = $26 \times 2 \times cost_{lookup}$
 - Two Letter: Add letters at 3 positions and then check the dictionary = $$ 26 \times3 \times cost_{lookup} $$
 - Three Letter: Add letters at 4 positions and then check the dictionary = $$ 26 \times 4 \times cost_{lookup} $$
 - ...
@@ -110,7 +110,7 @@ def w2c(word):
 
 Now that we've done this, we can implement an anagram check function as:
 
-```
+```python
 def are_counts_equal(counter1, counter2):
     for i in range(26):
         if counter1[i] != counter2[i]:
@@ -224,7 +224,7 @@ The block below shows portion of the output for addagram sequences for *as* with
 ## Conclusion(?)
 On an i7 6700HQ Skylake Laptop, it computes all the possible addagram sequences for *as* up to 9 letters in around 4 seconds. With this, I thought maybe I could call it a day. The program runs fast enough for practical purposes, so it may be good for most people. However, let's think about whether we can improve the performance in any way. In the above program, we do a lot of trial and error to check if a generated counter forms an addagram sequence. We try out every possible letter at each and every stage. What if, instead of finding addagrams by trial and error each time, we do the trial-and-error process exactly once and figure out what possible letters can be added to a given counter?
 
-We can do this optimization by building a *Trie* where each node corresponds to a counter and the child nodes correspond to counters which form an addagram sequence with the given counter. Interestingly, our design for the trie also implicity leads to a *[Directed Acyclic Graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)* representation. We can notice this in the following case of the counter $$ \text{\{l:1, o:1, w:1 \}} $$:
+We can do this optimization by building a *Trie* where each node corresponds to a counter and the child nodes correspond to counters which form an addagram sequence with the given counter. Interestingly, our design for the trie also implicity leads to a *[Directed Acyclic Graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)* representation. We can notice this in the following case of the counter $\text{\{l:1, o:1, w:1 \}}$:
 1. Adding an f produces $$ \text{\{f:1, l:1, o:1, w:1 \}} $$ 
 2. Adding an s produces $$ \text{\{l:1, o:1, s:1, w:1 \}} $$ 
 3. Adding an s to the counter in (1) produces $$ \text{\{f:1, l:1, o:1, s:1, w:1 \}} $$
