@@ -79,43 +79,46 @@ export default function Home() {
               </div>
           </div>
       </section>
-      <section id="papers" className=" services-area gray-bg pt-125 pb-130">
-          <div className="container">
-              <div className="row justify-content-center">
-                  <div className="col-lg-8">
-                      <div className="section-title text-center pb-30">
-                          <h2 className="title">Papers I Find Very Interesting</h2>
-                      </div>
-                  </div>
-              </div>
-              <div className="row justify-content-center">
-                  <div className="col-lg-4 col-md-6 col-sm-8">
-                      <div className="single-service text-center mt-30">
-                          <div className="service-content">
-                              <h4 className="service-title"><a href="https://arxiv.org/pdf/1609.01454.pdf">Attention-Based Recurrent Neural Network Models for Joint Intent Detection and Slot Filling</a></h4>
-                              <p>Bing Liu, Ian Lane</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div className="col-lg-4 col-md-6 col-sm-8">
-                      <div className="single-service text-center mt-30">
-                          <div className="service-content">
-                              <h4 className="service-title"><a href="https://www.csie.ntu.edu.tw/~yvchen/doc/IS16_MultiJoint.pdf">Multi-Domain Joint Semantic Frame Parsing using Bi-directional RNN-LSTM</a></h4>
-                              <p>Dilek Hakkani-Tür, Gokhan Tur, Asli Celikyilmaz, Yun-Nung Chen,Jianfeng Gao, Li Deng, and Ye-Yi Wang</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div className="col-lg-4 col-md-6 col-sm-8">
-                      <div className="single-service text-center mt-30">
-                          <div className="service-content">
-                              <h4 className="service-title"><a href="https://arxiv.org/pdf/1508.07909.pdf">Neural Machine Translation of Rare Words with Subword Units</a></h4>
-                              <p>Rico Sennrich, Barry Haddow and Alexandra Birch</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
     </Layout>
   )
+}
+
+function ReadingList() {
+    return (     <section id="papers" className=" services-area gray-bg pt-125 pb-130">
+    <div className="container">
+        <div className="row justify-content-center">
+            <div className="col-lg-8">
+                <div className="section-title text-center pb-30">
+                    <h2 className="title">Papers I Find Very Interesting</h2>
+                </div>
+            </div>
+        </div>
+        <div className="row justify-content-center">
+            <div className="col-lg-4 col-md-6 col-sm-8">
+                <div className="single-service text-center mt-30">
+                    <div className="service-content">
+                        <h4 className="service-title"><a href="https://arxiv.org/pdf/1609.01454.pdf">Attention-Based Recurrent Neural Network Models for Joint Intent Detection and Slot Filling</a></h4>
+                        <p>Bing Liu, Ian Lane</p>
+                    </div>
+                </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-8">
+                <div className="single-service text-center mt-30">
+                    <div className="service-content">
+                        <h4 className="service-title"><a href="https://www.csie.ntu.edu.tw/~yvchen/doc/IS16_MultiJoint.pdf">Multi-Domain Joint Semantic Frame Parsing using Bi-directional RNN-LSTM</a></h4>
+                        <p>Dilek Hakkani-Tür, Gokhan Tur, Asli Celikyilmaz, Yun-Nung Chen,Jianfeng Gao, Li Deng, and Ye-Yi Wang</p>
+                    </div>
+                </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-8">
+                <div className="single-service text-center mt-30">
+                    <div className="service-content">
+                        <h4 className="service-title"><a href="https://arxiv.org/pdf/1508.07909.pdf">Neural Machine Translation of Rare Words with Subword Units</a></h4>
+                        <p>Rico Sennrich, Barry Haddow and Alexandra Birch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>);
 }

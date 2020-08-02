@@ -5,7 +5,7 @@ date: 2020-07-29
 categories: transformers, bert
 ---
 
-*This example is runnable as a Google Colab notebook [here](https://colab.research.google.com/drive/14iAiYAp864c0nETje7Rt10UQwfxicqNC?usp=sharing)
+*This example is runnable as a Google Colab notebook [here](https://colab.research.google.com/drive/14iAiYAp864c0nETje7Rt10UQwfxicqNC?usp=sharing).*
 
 ### Introduction
 

@@ -7,7 +7,7 @@ function PostItem({
 }) {
     const { frontmatter } = node
     return (
-        <li className="post-item">
+        <div className="col-lg-8">
             <h2><a href={frontmatter.slug}>{frontmatter.title}</a></h2>
             <small className="small post-meta">
                 <p>
@@ -16,7 +16,7 @@ function PostItem({
                     {node.excerpt}
                 </p>
             </small>
-        </li>
+        </div>
     )
 }
 
@@ -30,9 +30,7 @@ function PostList({ edges }) {
             return (<section id="post-list" className="pt-25 pb-80">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-8">
                             <PostItem node={node} />
-                        </div>
                     </div>
                 </div>
                 </section>)
