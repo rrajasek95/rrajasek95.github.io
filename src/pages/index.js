@@ -25,7 +25,7 @@ function TwitterUrl() {
 }
 
 function GitHubUrl() {
-  return (<a href="https://github.com/rrajasek1995">rrajasek95</a>)
+  return (<a href="https://github.com/rrajasek95">rrajasek95</a>)
 }
 
 function ResumeUrl() {
